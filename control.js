@@ -34,7 +34,7 @@ goog.scope(function() {
     ControlName.prototype.enterDocument = function() {
         ControlName.base(this, 'enterDocument');
 
-        this.initChildElements_();
+        this.initListeners_();
     };
 
     /**
@@ -44,7 +44,7 @@ goog.scope(function() {
     ControlName.prototype.decorateInternal = function(element) {
         ControlName.base(this, 'decorateInternal', element);
 
-        this.initListeners_();
+        this.initChildElements_();
     };
 
     /**

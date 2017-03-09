@@ -32,7 +32,7 @@ class View extends cl.iControl.View {
     enterDocument() {
         super.enterDocument();
 
-        this.initDomElements_();
+        this.initDomListeners_();
     };
 
     /**
@@ -42,7 +42,7 @@ class View extends cl.iControl.View {
     decorateInternal(element) {
         super.decorateInternal(element);
 
-        this.initDomListeners_();
+        this.initDomElements_();
     };
 
     /** @private */

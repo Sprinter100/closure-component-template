@@ -22,7 +22,7 @@ class ControlName extends cl.iControl.Control {
     enterDocument() {
         super.enterDocument();
 
-        this.initChildElements_();
+        this.initListeners_();
     };
 
     /**
@@ -32,7 +32,7 @@ class ControlName extends cl.iControl.Control {
     decorateInternal(element) {
         super.decorateInternal(element);
 
-        this.initListeners_();
+        this.initChildElements_();
     };
 
     /** @private */

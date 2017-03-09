@@ -44,7 +44,7 @@ goog.scope(function() {
     View.prototype.enterDocument = function() {
         View.base(this, 'enterDocument');
 
-        this.initDomElements_();
+        this.initDomListeners_();
     };
 
     /**
@@ -54,7 +54,7 @@ goog.scope(function() {
     View.prototype.decorateInternal = function(element) {
         View.base(this, 'decorateInternal', element);
 
-        this.initDomListeners_();
+        this.initDomElements_();
     };
 
     /**
