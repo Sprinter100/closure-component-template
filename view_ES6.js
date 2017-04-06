@@ -1,5 +1,5 @@
 goog.module('sv.bControlName.View');
-goog.declareLegacyNamespace();
+goog.module.declareLegacyNamespace();
 
 goog.require('cl.iControl.View');
 
